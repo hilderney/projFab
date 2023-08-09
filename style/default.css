@@ -39,6 +39,17 @@ body {
   color: var(--white);
 }
 
+.text-success { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-light { color: var(--light); }
+.text-dark { color: var(--darker); }
+.text-complementary { color: var(--complementary); }
+.text-upper { text-transform: uppercase; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
 header {
   background-color: var(--white);
   position: fixed;
@@ -119,12 +130,8 @@ h2 { font-size: 3rem; }
 h3 { font-size: 1.4rem; }
 
 article {
-  max-width: 360px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
+  max-width: 420px;
+  position: relative;
   text-align: center;
   background-color: var(--black25);
   color: var(--papper);
@@ -142,6 +149,13 @@ article p {
   display: block;
   width: 100%;
   width: 720px;
+  height: 100%;
+}
+
+.content-2 {
+  display: block;
+  width: 100%;
+  width: 968px;
   height: 100%;
 }
 
@@ -236,9 +250,12 @@ button:focus {
 .mh-lg:last-child { margin-right: 0 }
 .mh-xg:last-child { margin-right: 0 }
 
-.text-center {
-  text-align: center;
-}
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.to-left { float: left; align-items: flex-start; }
+.to-right { float: right; align-items: flex-end; }
+.to-top { justify-content: flex-start; }
+.to-bottom { justify-content: flex-end; }
 
 .under-header {
   z-index: 99;
@@ -255,6 +272,8 @@ button:focus {
   -webkit-filter: drop-shadow(5px 5px 5px var(--black50));
   filter: drop-shadow(5px 5px 5px var(--black50));
 }
+
+/* HERO */
 
 #hero {
   height: 100vh;
@@ -273,12 +292,20 @@ button:focus {
   z-index: 10;
 }
 
-#hero article {
-  left: -35%;
-  right: 0;
-  bottom: calc(var(--xg) * 2);
+#hero iframe {
+  border: 7px solid var(--light);
+  border-radius: 14px;
   z-index: 11;
 }
+
+#hero article {
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  z-index: 11;
+}
+
+/* VIDEO */
 
 #video {
   height: 100%;
@@ -286,10 +313,21 @@ button:focus {
   background-color: var(--darker);
 }
 
+/* INTRO */
+
 #intro {
   min-height: 720px;
   background-color: var(--darker);
 }
+
+/* TEAM */
+
+#team {
+  min-height: 720px;
+  background-color: var(--darker);
+}
+
+/* BANNER */
 
 #banner {
   height: 300px;
