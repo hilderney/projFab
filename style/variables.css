@@ -6,6 +6,7 @@
   --black50: rgba(0, 0, 0, 0.5);
   --black75: rgba(0, 0, 0, 0.75);
   --white: #fff;
+  --whitish: #ccc;
   --dark: #2E3A44;
   --darker: #141018;
   --light: #49DADE;
@@ -21,6 +22,14 @@
   --md: var(--space);
   --lg: calc(var(--space) * 2);
   --xg: calc(var(--space) * 8);
+
+  --text-size: 16px;
+  --text-normal: var(--text-size);
+  --text-title: calc(var(--text-size) * 1.2);
+  --text-small: calc(var(--text-size) * 0.75);
+  --text-large: calc(var(--text-size) * 1.4);
+  --text-huge: calc(var(--text-size) * 1.8);
+
 
   --header-height: 70px;
   --header-height-mobile: 70px;
